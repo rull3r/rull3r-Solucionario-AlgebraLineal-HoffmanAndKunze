@@ -1,0 +1,73 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=XPcoPwAACAAJ}{Álgebra Lineal - Hoffman and Kunze}\\}
+
+\makeindex
+
+\begin{document}
+	
+	\problema{ }\label{pro:1}
+	Verificar que el conjunto\index{Conjunto} de los números\index{Numeros} complejos\index{complejos!Numeros} de la forma $x+iy\sqrt{2}$ con $x,y\in\Q$ es un subcuerpo\index{Subcuerpo} de $\C$.
+	\solution
+	Procedemos a ver cada uno de los axiomas\index{Axioma} para comprobar que es un subcuerpo\index{Subcuerpo} de $\C$ teniendo que \\ $z_1=x_1+iy_1\sqrt{2}$ y que $z_2=x_2+iy_2\sqrt{2}$ con $x_1,x_2,y_1,y_2\in\Q$
+	\begin{enumerate}[\hspace{1cm}i.]
+		\item Con $x_1=y_1=0$, $z_1=0$ por lo tanto el $0$ esta en el conjunto.
+		\item Con $x_1=1$ y $y_1=0$, $z_1=1$ por lo tanto el $1$ esta en el conjunto.
+		\item $z_1+z_2=x_1+iy_1\sqrt{2}+x_2+iy_2\sqrt{2}=(x_1+x_2)+i(y_1+y_2)\sqrt{2}$ por lo tanto $z_1+z_2$ pertenece al conjunto.
+		\item $-z_1$ esta en el conjunto ya que basta tomar $x_1$ y $y_1$ como negativos.
+		\item Veamos que $z_1z_2$ pertenecen al conjunto 
+		\begin{align*}
+		z_1z_2&=(x_1+iy_1\sqrt{2})(x_2+iy_2\sqrt{2})\\
+		&=x_1x_2+ix_1y_2\sqrt{2}+ix_2y_1\sqrt{2}+2y_1y_2\\
+		&=(x_1x_2+2y_1y_2)+i(x_1y_2+x_2y_1)\sqrt{2}\\
+		\end{align*}
+		
+		\item Veamos que $z_1^{-1}$ con $x_1,y_1\neq0$ pertenece al conjunto
+		\begin{align*}
+		z_1^{-1}&=\left( \dfrac{1}{x_1+iy_1\sqrt{2}}\right) \left( \dfrac{x_1-iy_1\sqrt{2}}{x_1-iy_1\sqrt{2}}\right) \\
+		&=\dfrac{x_1-iy_1\sqrt{2}}{\left(x_1+iy_1\sqrt{2} \right) \left( x_1-iy_1\sqrt{2}\right) }\\
+		&=\dfrac{x_1-iy_1\sqrt{2}}{x_1^2+2y_1^2}\\
+		&=\dfrac{x_1}{x_1^2+2y_1^2}+i\dfrac{-y_1}{x_1^2+2y_1^2}\sqrt{2}
+		\end{align*}
+	\end{enumerate}
+	
+	Luego el conjunto de los números complejos de la forma $x+iy\sqrt{2}$ con $x,y\in\Q$ es un subcuerpo de $\C$. \QEPD
+	
+
+	
+\end{document}
