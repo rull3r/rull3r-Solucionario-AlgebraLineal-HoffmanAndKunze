@@ -1,0 +1,121 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=XPcoPwAACAAJ}{Álgebra Lineal - Hoffman and Kunze}\\}
+
+\makeindex
+
+\begin{document}
+	
+	\problema{ }\label{pro:2}
+	Sea $F$ el cuerpo\index{Cuerpo} de los números\index{Numeros} complejos\index{complejos!Numeros}. ¿Son equivalentes los dos sistemas\index{Sistemas} de ecuaciones lineales\index{ecuaciones lineales!Sistemas} siguiente? Si es así. expresar cada ecuación\index{Ecuacion} de cada sistema como combinación lineal\index{Combinacion lineal} del otro.
+	\begin{eqnarray*}
+		x_1-x_2=0 & 3x_1+x_2=0\\
+		2x_1+x_2=0 & x_1+x_2=0
+	\end{eqnarray*}
+
+	\solution
+	
+	\begin{itemize}
+		\item Para la ecuación 1 del sistema 1 hacemos $x_1-x_2=a(3x_1+x_2)+b(x_1+x_2)$
+		\begin{align*}
+		\begin{aligned}
+		1&= 3a+b \\
+		-1&=a+b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&= 1 \\
+		b&= -2
+		\end{aligned}
+		\end{align*}
+		
+		de modo que $x_1-x_2=1(3x_1+x_2)-2(x_1+x_2)$
+		
+		\item Para la ecuación 2 del sistema 1 hacemos $2x_1+x_2=a(3x_1+x_2)+b(x_1+x_2)$
+		\begin{align*}
+		\begin{aligned}
+		2&= 3a+b \\
+		1&=a+b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=\frac{1}{2} \\
+		b&= \frac{1}{2}
+		\end{aligned}
+		\end{align*}
+		de modo que $2x_1+x_2=\frac{1}{2}(3x_1+x_2)+\frac{1}{2}(x_1+x_2)$
+		
+		\item Para la ecuación 1 del sistema 2 hacemos $3x_1+x_2=a(x_1-x_2)+b(2x_1+x_2)$
+		\begin{align*}
+		\begin{aligned}
+		3&= a+2b \\
+		1&=-a+b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=\frac{1}{3} \\
+		b&= \frac{4}{3}
+		\end{aligned}
+		\end{align*}
+		de modo que $3x_1+x_2=\frac{1}{3}(x_1-x_2)+\frac{4}{3}(2x_1+x_2)$
+		\item Para la ecuación 2 del sistema 2 hacemos $x_1+x_2=a(x_1-x_2)+b(2x_1+x_2)$
+		\begin{align*}
+		\begin{aligned}
+		1&= a+2b \\
+		1&=-a+b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=\frac{-1}{3} \\
+		b&= \frac{2}{3}
+		\end{aligned}
+		\end{align*}
+		de modo que $x_1+x_2=\frac{-1}{3}(x_1-x_2)+\frac{2}{3}(2x_1+x_2)$
+	\end{itemize}
+	
+	
+	
+\end{document}
