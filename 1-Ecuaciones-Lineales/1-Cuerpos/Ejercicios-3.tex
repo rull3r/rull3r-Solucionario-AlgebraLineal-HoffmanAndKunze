@@ -1,0 +1,145 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=XPcoPwAACAAJ}{Álgebra Lineal - Hoffman and Kunze}\\}
+
+\makeindex
+
+\begin{document}
+	
+	\problema{ }\label{pro:3}
+	Prueba los siguientes sistemas de ecuaciones como en el Ejercicio 2.
+	\begin{eqnarray*}
+		-x_1+x_2+4x_3=0 & x_1-x_3=0\\
+		x_1+3x_2+8x_3=0 & x_2+3x_3=0\\
+		\frac{1}{2}x_1+x_2+\frac{5}{2}x_3=0 & 
+	\end{eqnarray*}
+
+	\solution
+	
+	\begin{itemize}
+		\item Para la ecuación 1 del sistema 1 hacemos $-x_1+x_2+4x_3=a(x_1-x_3)+b(x_2+3x_3)$
+		\begin{align*}
+		\begin{aligned}
+		-1&= a \\
+		1&=b	\\
+		4&=-a+3b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&= -1 \\
+		b&= 1
+		\end{aligned}
+		\end{align*}
+		
+		de modo que $-x_1+x_2+4x_3=-(x_1-x_3)+(x_2+3x_3)$
+		
+		\item Para la ecuación 2 del sistema 1 hacemos $x_1+3x_2+8x_3=a(x_1-x_3)+b(x_2+3x_3)$
+		\begin{align*}
+		\begin{aligned}
+		1&= a \\
+		3&= b	\\
+		8&= -a+3b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=1 \\
+		b&= 3
+		\end{aligned}
+		\end{align*}
+		de modo que $x_1+3x_2+8x_3=(x_1-x_3)+3(x_2+3x_3)$
+		
+		\item Para la ecuación 3 del sistema 1 hacemos $\frac{1}{2}x_1+x_2+\frac{5}{2}x_3=a(x_1-x_3)+b(x_2+3x_3)$
+		\begin{align*}
+		\begin{aligned}
+		\frac{1}{2}&= a \\
+		1&= b	\\
+		\frac{5}{2}&= -a+3b
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=\frac{1}{2} \\
+		b&= 1
+		\end{aligned}
+		\end{align*}
+		de modo que $\frac{1}{2}x_1+x_2+\frac{5}{2}x_3=\frac{1}{2}(x_1-x_3)+(x_2+3x_3)$
+		
+		\item Para la ecuación 1 del sistema 2 hacemos $x_1-x_3=a(-x_1+x_2+4x_3)+b(x_1+3x_2+8x_3)+c(\frac{1}{2}x_1+x_2+\frac{5}{2}x_3)$
+		\begin{align*}
+		\begin{aligned}
+		1&= -a+b+\frac{c}{2} \\
+		0 &=	a+3b+c	\\
+		-1&=4a+8b+\frac{5}{2}c
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=-\frac{3}{4} \\
+		b&=\frac{1}{4}	\\
+		c&=0
+		\end{aligned}
+		\end{align*}
+		de modo que $x_1-x_3=-\frac{3}{4}(-x_1+x_2+4x_3)+\frac{1}{4}(x_1+3x_2+8x_3)+c(\frac{1}{2}x_1+x_2+\frac{5}{2}x_3)$  $\Rightarrow$  $x_1-x_3=-\frac{3}{4}(-x_1+x_2+4x_3)+\frac{1}{4}(x_1+3x_2+8x_3)$
+		
+		
+		\item Para la ecuación 2 del sistema 2 hacemos $x_2+3x_3=a(-x_1+x_2+4x_3)+b(x_1+3x_2+8x_3)+c(\frac{1}{2}x_1+x_2+\frac{5}{2}x_3)$
+		\begin{align*}
+		\begin{aligned}
+		0&= -a+b+\frac{c}{2} \\
+		1 &=	a+3b+c	\\
+		1&=4a+8b+\frac{5}{2}c
+		\end{aligned}
+		\quad
+		\Rightarrow
+		\quad
+		\begin{aligned}
+		a&=\frac{1}{4} \\
+		b&=\frac{1}{4}	\\
+		c&=0
+		\end{aligned}
+		\end{align*}
+		de modo que $x_2+3x_3=\frac{1}{4}(-x_1+x_2+4x_3)+\frac{1}{4}(x_1+3x_2+8x_3)+0(\frac{1}{2}x_1+x_2+\frac{5}{2}x_3)$ $\Rightarrow$  $x_2+3x_3=\frac{1}{4}(-x_1+x_2+4x_3)+\frac{1}{4}(x_1+3x_2+8x_3)$
+	\end{itemize}
+	
+\end{document}
