@@ -13,7 +13,7 @@ El solucionario está organizado en capítulos y secciones. A continuación se m
   - :pencil: [Ejercicio 1](https://rull3r.github.io/2015-01-04-AlgebraLineal-HoffmanAndKunze-1-12-1/)
   - :pencil: [Ejercicio 2](https://rull3r.github.io/2015-01-04-AlgebraLineal-HoffmanAndKunze-1-12-2/)
   - :pencil: [Ejercicio 3](https://rull3r.github.io/2015-01-04-AlgebraLineal-HoffmanAndKunze-1-12-3/)
-  - :pencil: [Ejercicio 4](https://rull3r.github.io/2015-01-04-AlgebraLineal-HoffmanAndKunze-1-12-4/)
+  - :pencil: [Ejercicio 4](https://rull3r.github.io/2015-01-05-AlgebraLineal-HoffmanAndKunze-1-12-4/)
 
 ¡No dudes en explorar los diferentes capítulos y secciones para encontrar las soluciones que necesitas! :bulb:
 
